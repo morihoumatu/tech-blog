@@ -31,8 +31,10 @@ export default defineConfig({
 	},
 	vite: {
 		build: {
+			modulePreload: {
+				polyfill: false
+			},
 			cssCodeSplit: false,
-			assetsInlineLimit: 0,
 			rollupOptions: {
 				output: {
 					assetFileNames: '_assets/[name].[hash][extname]',
@@ -41,9 +43,11 @@ export default defineConfig({
 				}
 			}
 		},
-		css: {
-			modules: {
-				generateScopedName: '[name]__[local]__[hash:base64:5]'
+		server: {
+			middlewareMode: true,
+			hmr: {
+				protocol: 'ws',
+				host: 'localhost'
 			}
 		}
 	}

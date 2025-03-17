@@ -3,111 +3,110 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: 'Atkinson';
-    src: url('/tech-blog/fonts/atkinson-regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'Atkinson';
-    src: url('/tech-blog/fonts/atkinson-bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  body {
-    font-family: 'Atkinson', sans-serif;
-    @apply text-blog-dark bg-blog-light min-h-screen;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-bold text-blog-dark;
-  }
-  
-  a {
-    @apply text-blog-primary hover:text-blog-secondary transition-colors duration-200;
-  }
+	@font-face {
+		font-family: 'Atkinson';
+		src: url('/tech-blog/fonts/atkinson-regular.woff') format('woff');
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Atkinson';
+		src: url('/tech-blog/fonts/atkinson-bold.woff') format('woff');
+		font-weight: 700;
+		font-style: normal;
+		font-display: swap;
+	}
 }
 
 @layer components {
-  .prose {
-    @apply max-w-none;
-  }
-  
-  .prose p {
-    @apply mb-8 text-gray-700;
-  }
-  
-  .prose code {
-    @apply px-2 py-1 bg-gray-100 rounded text-blog-primary;
-  }
-  
-  .prose pre {
-    @apply p-6 rounded-lg bg-gray-900 text-white overflow-x-auto;
-  }
-  
-  .prose pre code {
-    @apply bg-transparent text-inherit p-0;
-  }
-  
-  .prose blockquote {
-    @apply border-l-4 border-blog-primary pl-5 italic text-gray-700;
-  }
-  
-  .prose ul {
-    @apply list-disc list-inside;
-  }
-  
-  .prose ol {
-    @apply list-decimal list-inside;
-  }
-  
-  .prose a {
-    @apply text-blog-primary hover:text-blog-secondary underline;
-  }
-  
-  .prose img {
-    @apply rounded-lg shadow-lg my-8;
-  }
-  
-  .prose table {
-    @apply w-full border-collapse my-8;
-  }
-  
-  .prose th,
-  .prose td {
-    @apply border border-gray-300 px-4 py-2;
-  }
-  
-  .prose th {
-    @apply bg-gray-100;
-  }
+	body {
+		font-family: 'Atkinson', sans-serif;
+		@apply text-blog-dark bg-blog-light min-h-screen;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		@apply font-bold text-blog-dark;
+	}
+
+	a {
+		@apply text-blog-primary hover:text-blog-secondary transition-colors duration-200;
+	}
+
+	.prose {
+		@apply max-w-none;
+	}
+
+	.prose p {
+		@apply mb-8 text-gray-700;
+	}
+
+	.prose code {
+		@apply px-2 py-1 bg-gray-100 rounded text-blog-primary;
+	}
+
+	.prose pre {
+		@apply p-6 rounded-lg bg-gray-900 text-white overflow-x-auto;
+	}
+
+	.prose pre code {
+		@apply bg-transparent text-inherit p-0;
+	}
+
+	.prose blockquote {
+		@apply border-l-4 border-blog-primary pl-5 italic text-gray-700;
+	}
+
+	.prose ul {
+		@apply list-disc list-inside;
+	}
+
+	.prose ol {
+		@apply list-decimal list-inside;
+	}
+
+	.prose a {
+		@apply text-blog-primary hover:text-blog-secondary underline;
+	}
+
+	.prose img {
+		@apply rounded-lg shadow-lg my-8;
+	}
+
+	.prose table {
+		@apply w-full border-collapse my-8;
+	}
+
+	.prose th,
+	.prose td {
+		@apply border border-gray-300 px-4 py-2;
+	}
+
+	.prose th {
+		@apply bg-gray-100;
+	}
 }
 
-/* Dark mode styles */
-@media (prefers-color-scheme: dark) {
-  body {
-    @apply bg-gray-900 text-white;
-  }
-  
-  .prose p,
-  .prose li,
-  .prose blockquote {
-    @apply text-gray-300;
-  }
-  
-  .prose code {
-    @apply bg-gray-800 text-blog-secondary;
-  }
-  
-  .prose th {
-    @apply bg-gray-800;
-  }
-  
-  .prose td {
-    @apply border-gray-700;
-  }
+@layer utilities {
+	.dark {
+		@apply bg-gray-900 text-white;
+	}
+
+	.dark .prose p,
+	.dark .prose li,
+	.dark .prose blockquote {
+		@apply text-gray-300;
+	}
+
+	.dark .prose code {
+		@apply bg-gray-800 text-blog-secondary;
+	}
+
+	.dark .prose th {
+		@apply bg-gray-800;
+	}
+
+	.dark .prose td {
+		@apply border-gray-700;
+	}
 }
