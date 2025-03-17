@@ -2,7 +2,7 @@
 title: '【入門】データベースとは？SQLの基本を理解しよう'
 description: 'データベースの基本概念とSQLの基礎を、初心者にもわかりやすく解説します。実践的な例を交えながら、データベース操作の基本を学びましょう。'
 pubDate: 'Aug 10 2024'
-heroImage: '/tech-blog/blog-placeholder-3.jpg'
+heroImage: '/blog-placeholder-3.jpg'
 ---
 
 # 【入門】データベースとは？SQLの基本を理解しよう
@@ -376,6 +376,6 @@ SHOW GRANTS FOR 'app_user'@'localhost';
 
 データベースの基本を理解したら、以下の記事も参考にしてください：
 
-- [【図解】リスト（配列）と辞書（オブジェクト）の違いを解説](/tech-blog/blog/list-and-dictionary-explained/)
-- [プログラミング初心者が最初に学ぶべき5つの概念](/tech-blog/blog/programming-concepts-for-beginners/)
-- [【初心者向け】プログラミングのエラーの種類と対処法](/tech-blog/blog/programming-error-handling-guide/)
+- [【図解】リスト（配列）と辞書（オブジェクト）の違いを解説](/blog/list-and-dictionary-explained/)
+- [プログラミング初心者が最初に学ぶべき5つの概念](/blog/programming-concepts-for-beginners/)
+- [【初心者向け】プログラミングのエラーの種類と対処法](/blog/programming-error-handling-guide/)

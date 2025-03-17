@@ -2,7 +2,7 @@
 title: '【入門】条件分岐(if文)を理解してロジックを組み立てよう'
 description: 'プログラミングの基本中の基本、if文による条件分岐の使い方を初心者向けにわかりやすく解説します。'
 pubDate: 'Jul 25 2024'
-heroImage: '/tech-blog/blog-placeholder-3.jpg'
+heroImage: '/blog-placeholder-3.jpg'
 ---
 
 # 【入門】条件分岐(if文)を理解してロジックを組み立てよう
@@ -490,6 +490,6 @@ if文による条件分岐は、プログラミングの基本中の基本です
 
 条件分岐の基本を理解したら、以下の記事も参考にしてください：
 
-- [【基礎から学ぶ】関数の作り方と使い方を徹底解説](/tech-blog/blog/function-basics-guide/)
-- [プログラミング初心者が最初に学ぶべき5つの概念](/tech-blog/blog/programming-concepts-for-beginners/)
-- [【図解】アルゴリズムとは？初心者が知るべき基本概念](/tech-blog/blog/algorithm-basics-explained/)
+- [【基礎から学ぶ】関数の作り方と使い方を徹底解説](/blog/function-basics-guide/)
+- [プログラミング初心者が最初に学ぶべき5つの概念](/blog/programming-concepts-for-beginners/)
+- [【図解】アルゴリズムとは？初心者が知るべき基本概念](/blog/algorithm-basics-explained/)

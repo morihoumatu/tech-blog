@@ -2,7 +2,7 @@
 title: '【初心者向け】簡単な電卓アプリを作ってみよう！（Python編）'
 description: 'Pythonを使って基本的な四則演算ができる電卓アプリを作成する方法を、初心者向けにステップバイステップで解説します。'
 pubDate: 'Aug 01 2024'
-heroImage: '/tech-blog/blog-placeholder-2.jpg'
+heroImage: '/blog-placeholder-2.jpg'
 ---
 
 # 【初心者向け】簡単な電卓アプリを作ってみよう！（Python編）
@@ -301,6 +301,6 @@ if __name__ == "__main__":
 
 電卓アプリの基本を理解したら、以下の記事も参考にしてください：
 
-- [変数・データ型・関数とは？初心者向けに超わかりやすく解説](/tech-blog/blog/programming-basics-for-beginners/)
-- [【入門】条件分岐(if文)を理解してロジックを組み立てよう](/tech-blog/blog/if-statement-guide/)
-- [【初心者向け】for文とwhile文の使い分け完全ガイド](/tech-blog/blog/loop-statement-guide/)
+- [変数・データ型・関数とは？初心者向けに超わかりやすく解説](/blog/programming-basics-for-beginners/)
+- [【入門】条件分岐(if文)を理解してロジックを組み立てよう](/blog/if-statement-guide/)
+- [【初心者向け】for文とwhile文の使い分け完全ガイド](/blog/loop-statement-guide/)

@@ -2,7 +2,7 @@
 title: '【初心者向け】APIとは？使い方と実装方法をわかりやすく解説'
 description: 'APIの基本概念から実際の使い方、実装方法まで、初心者にもわかりやすく解説します。具体的な例を交えながら、APIの理解を深めましょう。'
 pubDate: 'Aug 15 2024'
-heroImage: '/tech-blog/blog-placeholder-4.jpg'
+heroImage: '/blog-placeholder-4.jpg'
 ---
 
 # 【初心者向け】APIとは？使い方と実装方法をわかりやすく解説
@@ -540,6 +540,6 @@ APIは現代のWeb開発において非常に重要な要素です。基本を�
 
 APIの基本を理解したら、以下の記事も参考にしてください：
 
-- [【入門】データベースとは？SQLの基本を理解しよう](/tech-blog/blog/database-sql-basics/)
-- [【初心者向け】プログラミングのエラーの種類と対処法](/tech-blog/blog/programming-error-handling-guide/)
-- [プログラミング初心者が最初に学ぶべき5つの概念](/tech-blog/blog/programming-concepts-for-beginners/)
+- [【入門】データベースとは？SQLの基本を理解しよう](/blog/database-sql-basics/)
+- [【初心者向け】プログラミングのエラーの種類と対処法](/blog/programming-error-handling-guide/)
+- [プログラミング初心者が最初に学ぶべき5つの概念](/blog/programming-concepts-for-beginners/)

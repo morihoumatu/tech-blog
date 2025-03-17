@@ -2,7 +2,7 @@
 title: '【超初心者向け】Hello Worldを書いてみよう！（Python, JavaScript, Java）'
 description: 'プログラミング入門の第一歩、Hello World プログラムの書き方を3つの主要言語で解説します。'
 pubDate: 'Jul 15 2024'
-heroImage: '/tech-blog/blog-placeholder-1.jpg'
+heroImage: '/blog-placeholder-1.jpg'
 ---
 
 # 【超初心者向け】Hello Worldを書いてみよう！（Python, JavaScript, Java）
@@ -270,6 +270,6 @@ Hello Worldプログラムは、プログラミング入門の第一歩として
 
 Hello Worldの基本を理解したら、以下の記事も参考にしてください：
 
-- [変数・データ型・関数とは？初心者向けに超わかりやすく解説](/tech-blog/blog/programming-basics-for-beginners/)
-- [プログラミング初心者が最初に学ぶべき5つの概念](/tech-blog/blog/programming-concepts-for-beginners/)
-- [【初心者向け】プログラミングのエラーの種類と対処法](/tech-blog/blog/programming-error-handling-guide/)
+- [変数・データ型・関数とは？初心者向けに超わかりやすく解説](/blog/programming-basics-for-beginners/)
+- [プログラミング初心者が最初に学ぶべき5つの概念](/blog/programming-concepts-for-beginners/)
+- [【初心者向け】プログラミングのエラーの種類と対処法](/blog/programming-error-handling-guide/)

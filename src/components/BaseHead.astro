@@ -1,23 +1,18 @@
 ---
-import "../styles/global.css";
-import { SITE_TITLE } from "../consts";
+import '../styles/global.css';
+import { SITE_TITLE } from '../consts';
 
 interface Props {
-  title: string;
-  description: string;
-  image?: string;
-  article?: boolean;
+	title: string;
+	description: string;
+	image?: string;
+	article?: boolean;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const {
-  title,
-  description,
-  image = "/tech-blog/blog-placeholder-1.jpg",
-  article,
-} = Astro.props;
+const { title, description, image = '/tech-blog/blog-placeholder-1.jpg', article } = Astro.props;
 
-const ogType = article ? "article" : "website";
+const ogType = article ? 'article' : 'website';
 const ogTitle = `${title} | ${SITE_TITLE}`;
 const buildTime = new Date().toISOString();
 ---
@@ -28,18 +23,15 @@ const buildTime = new Date().toISOString();
 <link rel="icon" type="image/svg+xml" href="/tech-blog/favicon.svg" />
 <link rel="sitemap" href="/tech-blog/sitemap-index.xml" />
 <link
-  rel="alternate"
-  type="application/rss+xml"
-  title={SITE_TITLE}
-  href={new URL("rss.xml", Astro.site)}
+	rel="alternate"
+	type="application/rss+xml"
+	title={SITE_TITLE}
+	href={new URL('rss.xml', Astro.site)}
 />
 <meta name="generator" content={Astro.generator} />
 
 <!-- Cache Control -->
-<meta
-  http-equiv="Cache-Control"
-  content="no-cache, no-store, must-revalidate"
-/>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
 <meta name="build-time" content={buildTime} />
@@ -72,10 +64,7 @@ const buildTime = new Date().toISOString();
 <!-- Additional SEO -->
 <meta name="robots" content="index, follow" />
 <meta name="author" content="森 宝松" />
-<meta
-  name="keywords"
-  content="プログラミング, 初心者, 学習, チュートリアル, JavaScript, Python, Web開発"
-/>
+<meta name="keywords" content="プログラミング, 初心者, 学習, チュートリアル, JavaScript, Python, Web開発" />
 
 <!-- Resource Hints -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -83,27 +72,32 @@ const buildTime = new Date().toISOString();
 
 <!-- JSON-LD -->
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "${SITE_TITLE}",
-    "url": "${Astro.site}",
-    "description": "${description}",
-    "author": {
-      "@type": "Person",
-      "name": "森 宝松",
-      "url": "https://x.com/HoumatsuM7789"
-    }
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "${SITE_TITLE}",
+  "url": "${Astro.site}",
+  "description": "${description}",
+  "author": {
+    "@type": "Person",
+    "name": "森 宝松",
+    "url": "https://x.com/HoumatsuM7789"
   }
+}
 </script>
 
 <!-- Service Worker Registration -->
 <script>
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker.register("/tech-blog/service-worker.js", {
-        scope: "/tech-blog/",
-      });
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', async () => {
+      try {
+        const registration = await navigator.serviceWorker.register('/tech-blog/service-worker.js', {
+          scope: '/tech-blog/'
+        });
+        console.log('ServiceWorker registration successful');
+      } catch (err) {
+        console.error('ServiceWorker registration failed:', err);
+      }
     });
   }
 </script>

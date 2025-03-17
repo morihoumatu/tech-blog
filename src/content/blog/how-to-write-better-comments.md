@@ -2,7 +2,7 @@
 title: '【コメントの書き方でコードが劇的にわかりやすくなる！】'
 description: 'プログラミングにおける効果的なコメントの書き方と、コードの可読性を向上させるベストプラクティスを解説します。'
 pubDate: 'Jul 10 2024'
-heroImage: '/tech-blog/blog-placeholder-3.jpg'
+heroImage: '/blog-placeholder-3.jpg'
 ---
 
 # コメントの書き方でコードが劇的にわかりやすくなる！
@@ -384,6 +384,6 @@ function calculateDiscountedPrice(price, userType, isSalePeriod) {
 
 コメントの書き方を理解したら、以下の記事も参考にしてください：
 
-- [プログラミング初心者が最初に学ぶべき5つの概念](/tech-blog/blog/programming-concepts-for-beginners/)
-- [【初心者向け】プログラミングのエラーの種類と対処法](/tech-blog/blog/programming-error-handling-guide/)
-- [【図解】アルゴリズムとは？初心者が知るべき基本概念](/tech-blog/blog/algorithm-basics-explained/)
+- [プログラミング初心者が最初に学ぶべき5つの概念](/blog/programming-concepts-for-beginners/)
+- [【初心者向け】プログラミングのエラーの種類と対処法](/blog/programming-error-handling-guide/)
+- [【図解】アルゴリズムとは？初心者が知るべき基本概念](/blog/algorithm-basics-explained/)

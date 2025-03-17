@@ -2,7 +2,7 @@
 title: '【初心者向け】プログラミングのエラーの種類と対処法'
 description: 'プログラミング初心者のために、よくあるエラーの種類と具体的な対処法を解説します。'
 pubDate: 'Jul 08 2024'
-heroImage: '/tech-blog/blog-placeholder-2.jpg'
+heroImage: '/blog-placeholder-2.jpg'
 ---
 
 # 【初心者向け】プログラミングのエラーの種類と対処法
@@ -346,6 +346,6 @@ greet(42);  // コンパイルエラー：数値は文字列型に割り当て�
 
 エラー対処の基本を理解したら、以下の記事も参考にしてください：
 
-- [変数・データ型・関数とは？初心者向けに超わかりやすく解説](/tech-blog/blog/programming-basics-for-beginners/)
-- [プログラミング初心者が最初に学ぶべき5つの概念](/tech-blog/blog/programming-concepts-for-beginners/)
-- [【図解】アルゴリズムとは？初心者が知るべき基本概念](/tech-blog/blog/algorithm-basics-explained/)
+- [変数・データ型・関数とは？初心者向けに超わかりやすく解説](/blog/programming-basics-for-beginners/)
+- [プログラミング初心者が最初に学ぶべき5つの概念](/blog/programming-concepts-for-beginners/)
+- [【図解】アルゴリズムとは？初心者が知るべき基本概念](/blog/algorithm-basics-explained/)

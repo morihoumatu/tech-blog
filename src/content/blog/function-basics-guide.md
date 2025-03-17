@@ -2,7 +2,7 @@
 title: '【基礎から学ぶ】関数の作り方と使い方を徹底解説'
 description: 'プログラミングの基本要素である関数について、作り方から実践的な使い方まで初心者にもわかりやすく解説します。'
 pubDate: 'Jul 20 2024'
-heroImage: '/tech-blog/blog-placeholder-4.jpg'
+heroImage: '/blog-placeholder-4.jpg'
 ---
 
 # 【基礎から学ぶ】関数の作り方と使い方を徹底解説
@@ -402,6 +402,6 @@ function testCalculateDiscount() {
 
 関数の基本を理解したら、以下の記事も参考にしてください：
 
-- [変数・データ型・関数とは？初心者向けに超わかりやすく解説](/tech-blog/blog/programming-basics-for-beginners/)
-- [プログラミング初心者が最初に学ぶべき5つの概念](/tech-blog/blog/programming-concepts-for-beginners/)
-- [【図解】アルゴリズムとは？初心者が知るべき基本概念](/tech-blog/blog/algorithm-basics-explained/)
+- [変数・データ型・関数とは？初心者向けに超わかりやすく解説](/blog/programming-basics-for-beginners/)
+- [プログラミング初心者が最初に学ぶべき5つの概念](/blog/programming-concepts-for-beginners/)
+- [【図解】アルゴリズムとは？初心者が知るべき基本概念](/blog/algorithm-basics-explained/)

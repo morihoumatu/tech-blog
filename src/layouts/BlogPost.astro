@@ -12,14 +12,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 <html lang="ja">
 	<head>
-		<BaseHead title={title} description={description} image={heroImage} article={true} />
+		<BaseHead title={title} description={description} image={heroImage ? `/tech-blog${heroImage}` : undefined} article={true} />
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
 				"@type": "BlogPosting",
 				"headline": "${title}",
 				"description": "${description}",
-				"image": "${heroImage}",
+				"image": "${heroImage ? `/tech-blog${heroImage}` : ''}",
 				"datePublished": "${pubDate.toISOString()}",
 				"dateModified": "${updatedDate?.toISOString() || pubDate.toISOString()}",
 				"author": {
@@ -49,7 +49,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 							class="w-full h-full object-cover"
 							width={1020}
 							height={510}
-							src={heroImage}
+							src={`/tech-blog${heroImage}`}
 							alt={title}
 						/>
 					</div>

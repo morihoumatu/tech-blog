@@ -2,7 +2,7 @@
 title: '【実践】簡単なToDoリストを作ってみよう！（JavaScript編）'
 description: 'JavaScriptを使って基本的なToDoリストアプリを作成する方法を、初心者向けにステップバイステップで解説します。'
 pubDate: 'Aug 05 2024'
-heroImage: '/tech-blog/blog-placeholder-1.jpg'
+heroImage: '/blog-placeholder-1.jpg'
 ---
 
 # 【実践】簡単なToDoリストを作ってみよう！（JavaScript編）
@@ -466,6 +466,6 @@ sortTasks(criteria) {
 
 ToDoリストアプリの基本を理解したら、以下の記事も参考にしてください：
 
-- [変数・データ型・関数とは？初心者向けに超わかりやすく解説](/tech-blog/blog/programming-basics-for-beginners/)
-- [【入門】条件分岐(if文)を理解してロジックを組み立てよう](/tech-blog/blog/if-statement-guide/)
-- [【図解】リスト（配列）と辞書（オブジェクト）の違いを解説](/tech-blog/blog/list-and-dictionary-explained/)
+- [変数・データ型・関数とは？初心者向けに超わかりやすく解説](/blog/programming-basics-for-beginners/)
+- [【入門】条件分岐(if文)を理解してロジックを組み立てよう](/blog/if-statement-guide/)
+- [【図解】リスト（配列）と辞書（オブジェクト）の違いを解説](/blog/list-and-dictionary-explained/)

@@ -2,7 +2,7 @@
 title: '【プログラミングを学ぶメリットとは？未経験者でもできる理由】'
 description: 'プログラミング未経験者向けに、プログラミングを学ぶメリットと、誰でも始められる理由を詳しく解説します。'
 pubDate: 'Jul 05 2024'
-heroImage: '/tech-blog/blog-placeholder-1.jpg'
+heroImage: '/blog-placeholder-1.jpg'
 ---
 
 # プログラミングを学ぶメリットとは？未経験者でもできる理由
@@ -237,6 +237,6 @@ Webプログラミングの場合、書いたコードの結果がブラウザ�
 
 この記事を読んでプログラミング学習に興味を持った方は、以下の記事もチェックしてみてください：
 
-- [変数・データ型・関数とは？初心者向けに超わかりやすく解説](/tech-blog/blog/programming-basics-for-beginners/)
-- [プログラミング初心者が最初に学ぶべき5つの概念](/tech-blog/blog/programming-concepts-for-beginners/)
-- [【図解】アルゴリズムとは？初心者が知るべき基本概念](/tech-blog/blog/algorithm-basics-explained/)
+- [変数・データ型・関数とは？初心者向けに超わかりやすく解説](/blog/programming-basics-for-beginners/)
+- [プログラミング初心者が最初に学ぶべき5つの概念](/blog/programming-concepts-for-beginners/)
+- [【図解】アルゴリズムとは？初心者が知るべき基本概念](/blog/algorithm-basics-explained/)

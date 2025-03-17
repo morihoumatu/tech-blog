@@ -11,6 +11,7 @@ export async function GET(context) {
 		items: posts.map((post) => ({
 			...post.data,
 			link: `/tech-blog/blog/${post.id}/`,
+			pubDate: post.data.pubDate,
 		})),
 	});
 }
