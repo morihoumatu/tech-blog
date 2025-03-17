@@ -1,61 +1,85 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
 <html lang="ja">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body class="min-h-screen bg-blog-light">
-		<Header />
-		<main class="max-w-4xl mx-auto px-4 py-12">
-			<div class="text-center mb-12">
-				<h1 class="text-4xl font-bold text-blog-dark mb-4">プログラミング学習の道標</h1>
-				<p class="text-xl text-gray-600">初心者から上級者まで、ステップバイステップで学べるコンテンツを提供しています</p>
-			</div>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="min-h-screen bg-blog-light">
+    <Header />
+    <main class="max-w-4xl mx-auto px-4 py-12">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-blog-dark mb-4">
+          プログラミング学習の道標
+        </h1>
+        <p class="text-xl text-gray-600">
+          初心者から上級者まで、ステップバイステップで学べるコンテンツを提供しています
+        </p>
+      </div>
 
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-				<div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blog-primary">
-					<h2 class="text-2xl font-bold text-blog-dark mb-4">初心者向けコンテンツ</h2>
-					<ul class="space-y-2">
-						<li>• プログラミングの基礎概念</li>
-						<li>• 開発環境のセットアップ</li>
-						<li>• 基本的なプログラミング構文</li>
-					</ul>
-				</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div
+          class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blog-primary"
+        >
+          <h2 class="text-2xl font-bold text-blog-dark mb-4">
+            初心者向けコンテンツ
+          </h2>
+          <ul class="space-y-2">
+            <li>• プログラミングの基礎概念</li>
+            <li>• 開発環境のセットアップ</li>
+            <li>• 基本的なプログラミング構文</li>
+          </ul>
+        </div>
 
-				<div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blog-secondary">
-					<h2 class="text-2xl font-bold text-blog-dark mb-4">実践的な学習</h2>
-					<ul class="space-y-2">
-						<li>• ハンズオンプロジェクト</li>
-						<li>• コードレビュー</li>
-						<li>• ベストプラクティス</li>
-					</ul>
-				</div>
-			</div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blog-secondary"
+        >
+          <h2 class="text-2xl font-bold text-blog-dark mb-4">実践的な学習</h2>
+          <ul class="space-y-2">
+            <li>• ハンズオンプロジェクト</li>
+            <li>• コードレビュー</li>
+            <li>• ベストプラクティス</li>
+          </ul>
+        </div>
+      </div>
 
-			<div class="bg-white p-8 rounded-lg shadow-md">
-				<h2 class="text-2xl font-bold text-blog-dark mb-4">最新の記事</h2>
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-					<a href="/tech-blog/blog/programming-basics-for-beginners" class="block hover:transform hover:scale-105 transition-transform">
-						<div class="bg-gray-50 p-4 rounded-lg">
-							<h3 class="text-xl font-semibold text-blog-dark mb-2">プログラミングの基礎を学ぼう</h3>
-							<p class="text-gray-600">変数、データ型、関数など、プログラミングの基本を解説します。</p>
-						</div>
-					</a>
-					<a href="/tech-blog/blog/algorithm-basics-explained" class="block hover:transform hover:scale-105 transition-transform">
-						<div class="bg-gray-50 p-4 rounded-lg">
-							<h3 class="text-xl font-semibold text-blog-dark mb-2">アルゴリズムの基礎</h3>
-							<p class="text-gray-600">プログラミングに必要な基本的なアルゴリズムを学びましょう。</p>
-						</div>
-					</a>
-				</div>
-			</div>
-		</main>
-		<Footer />
-	</body>
+      <div class="bg-white p-8 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold text-blog-dark mb-4">最新の記事</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <a
+            href="/tech-blog/blog/programming-basics-for-beginners"
+            class="block hover:transform hover:scale-105 transition-transform"
+          >
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h3 class="text-xl font-semibold text-blog-dark mb-2">
+                プログラミングの基礎を学ぼう
+              </h3>
+              <p class="text-gray-600">
+                変数、データ型、関数など、プログラミングの基本を解説します。
+              </p>
+            </div>
+          </a>
+          <a
+            href="/tech-blog/blog/algorithm-basics-explained"
+            class="block hover:transform hover:scale-105 transition-transform"
+          >
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h3 class="text-xl font-semibold text-blog-dark mb-2">
+                アルゴリズムの基礎
+              </h3>
+              <p class="text-gray-600">
+                プログラミングに必要な基本的なアルゴリズムを学びましょう。
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </body>
 </html>
