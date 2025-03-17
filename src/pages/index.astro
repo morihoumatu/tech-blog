@@ -6,44 +6,55 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
+	<body class="min-h-screen bg-blog-light">
 		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+		<main class="max-w-4xl mx-auto px-4 py-12">
+			<div class="text-center mb-12">
+				<h1 class="text-4xl font-bold text-blog-dark mb-4">プログラミング学習の道標</h1>
+				<p class="text-xl text-gray-600">初心者から上級者まで、ステップバイステップで学べるコンテンツを提供しています</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+				<div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blog-primary">
+					<h2 class="text-2xl font-bold text-blog-dark mb-4">初心者向けコンテンツ</h2>
+					<ul class="space-y-2">
+						<li>• プログラミングの基礎概念</li>
+						<li>• 開発環境のセットアップ</li>
+						<li>• 基本的なプログラミング構文</li>
+					</ul>
+				</div>
+
+				<div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blog-secondary">
+					<h2 class="text-2xl font-bold text-blog-dark mb-4">実践的な学習</h2>
+					<ul class="space-y-2">
+						<li>• ハンズオンプロジェクト</li>
+						<li>• コードレビュー</li>
+						<li>• ベストプラクティス</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="bg-white p-8 rounded-lg shadow-md">
+				<h2 class="text-2xl font-bold text-blog-dark mb-4">最新の記事</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+					<a href="/tech-blog/blog/programming-basics-for-beginners" class="block hover:transform hover:scale-105 transition-transform">
+						<div class="bg-gray-50 p-4 rounded-lg">
+							<h3 class="text-xl font-semibold text-blog-dark mb-2">プログラミングの基礎を学ぼう</h3>
+							<p class="text-gray-600">変数、データ型、関数など、プログラミングの基本を解説します。</p>
+						</div>
+					</a>
+					<a href="/tech-blog/blog/algorithm-basics-explained" class="block hover:transform hover:scale-105 transition-transform">
+						<div class="bg-gray-50 p-4 rounded-lg">
+							<h3 class="text-xl font-semibold text-blog-dark mb-2">アルゴリズムの基礎</h3>
+							<p class="text-gray-600">プログラミングに必要な基本的なアルゴリズムを学びましょう。</p>
+						</div>
+					</a>
+				</div>
+			</div>
 		</main>
 		<Footer />
 	</body>

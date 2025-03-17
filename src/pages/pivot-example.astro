@@ -1,0 +1,53 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import PivotTable from '../components/PivotTable.astro';
+
+// サンプルデータ
+const salesData = [
+  { category: '食品', product: 'りんご', region: '東京', sales: 1000 },
+  { category: '食品', product: 'りんご', region: '大阪', sales: 1500 },
+  { category: '食品', product: 'バナナ', region: '東京', sales: 800 },
+  { category: '食品', product: 'バナナ', region: '大阪', sales: 1200 },
+  { category: '飲料', product: 'コーヒー', region: '東京', sales: 2000 },
+  { category: '飲料', product: 'コーヒー', region: '大阪', sales: 2500 },
+  { category: '飲料', product: '紅茶', region: '東京', sales: 1500 },
+  { category: '飲料', product: '紅茶', region: '大阪', sales: 1800 },
+];
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="min-h-screen bg-gray-50">
+    <Header />
+    <main class="max-w-6xl mx-auto px-4 py-12">
+      <h1 class="text-4xl font-bold text-gray-900 mb-8">ピボットテーブル例</h1>
+      
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">カテゴリー・商品別の地域売上</h2>
+        <PivotTable
+          data={salesData}
+          rows={['category', 'product']}
+          columns={['region']}
+          values={['sales']}
+        />
+      </div>
+      
+      <div class="bg-white p-6 rounded-lg shadow-lg mt-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">地域・商品別のカテゴリー売上</h2>
+        <PivotTable
+          data={salesData}
+          rows={['region', 'product']}
+          columns={['category']}
+          values={['sales']}
+        />
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
