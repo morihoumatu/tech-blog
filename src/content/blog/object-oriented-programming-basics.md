@@ -2,7 +2,7 @@
 title: 'オブジェクト指向って何？初心者向けに超ざっくり解説'
 description: 'プログラミング初心者のために、オブジェクト指向プログラミングの基本概念をわかりやすく解説します。'
 pubDate: 'Jun 28 2024'
-heroImage: '/blog-placeholder-4.jpg'
+heroImage: '/tech-blog/blog-placeholder-4.jpg'
 ---
 
 [前半部分は同じなので省略...]

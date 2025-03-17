@@ -2,7 +2,7 @@
 title: '【初心者向け】プログラミングのエラーの種類と対処法'
 description: 'プログラミング初心者のために、よくあるエラーの種類と具体的な対処法を解説します。'
 pubDate: 'Jul 08 2024'
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/tech-blog/blog-placeholder-2.jpg'
 ---
 
 # 【初心者向け】プログラミングのエラーの種類と対処法

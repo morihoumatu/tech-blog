@@ -2,7 +2,7 @@
 title: '【超初心者向け】Hello Worldを書いてみよう！（Python, JavaScript, Java）'
 description: 'プログラミング入門の第一歩、Hello World プログラムの書き方を3つの主要言語で解説します。'
 pubDate: 'Jul 15 2024'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '/tech-blog/blog-placeholder-1.jpg'
 ---
 
 # 【超初心者向け】Hello Worldを書いてみよう！（Python, JavaScript, Java）

@@ -2,7 +2,7 @@
 title: '【初心者向け】for文とwhile文の使い分け完全ガイド'
 description: 'プログラミングの基礎となるループ処理について、for文とwhile文の違いと適切な使い分けを解説します。'
 pubDate: 'Jul 28 2024'
-heroImage: '/blog-placeholder-4.jpg'
+heroImage: '/tech-blog/blog-placeholder-4.jpg'
 ---
 
 # 【初心者向け】for文とwhile文の使い分け完全ガイド

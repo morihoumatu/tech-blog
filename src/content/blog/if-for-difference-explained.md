@@ -2,7 +2,7 @@
 title: '【初心者向け】if文とfor文の違いをわかりやすく解説'
 description: 'プログラミング初心者のために、if文とfor文の基本的な違いと使い方を具体例を交えてわかりやすく解説します。'
 pubDate: 'Jun 25 2024'
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/tech-blog/blog-placeholder-2.jpg'
 ---
 
 # 【初心者向け】if文とfor文の違いをわかりやすく解説
