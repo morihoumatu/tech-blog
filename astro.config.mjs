@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-	site: 'https://example.com', // あなたの実際のサイトURLに変更してください
+	site: 'https://example.com',
 	base: '/tech-blog',
 	integrations: [
 		mdx(), 

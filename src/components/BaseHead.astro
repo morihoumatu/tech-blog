@@ -13,7 +13,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const {
   title,
   description,
-  image = "/blog-placeholder-1.jpg",
+  image = "/tech-blog/blog-placeholder-1.jpg",
   article,
 } = Astro.props;
 
@@ -25,23 +25,11 @@ const ogTitle = `${title} | ${SITE_TITLE}`;
 const buildTime = new Date().toISOString();
 ---
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6MH7ZFWCX"
-></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-  gtag("config", "G-Z6MH7ZFWCX");
-</script>
-
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="sitemap" href="/sitemap-index.xml" />
+<link rel="icon" type="image/svg+xml" href="/tech-blog/favicon.svg" />
+<link rel="sitemap" href="/tech-blog/sitemap-index.xml" />
 <link
   rel="alternate"
   type="application/rss+xml"
@@ -99,14 +87,14 @@ const buildTime = new Date().toISOString();
 <!-- Font preloads -->
 <link
   rel="preload"
-  href="/fonts/atkinson-regular.woff"
+  href="/tech-blog/fonts/atkinson-regular.woff"
   as="font"
   type="font/woff"
   crossorigin
 />
 <link
   rel="preload"
-  href="/fonts/atkinson-bold.woff"
+  href="/tech-blog/fonts/atkinson-bold.woff"
   as="font"
   type="font/woff"
   crossorigin
@@ -132,7 +120,7 @@ const buildTime = new Date().toISOString();
 <script>
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("/service-worker.js");
+      navigator.serviceWorker.register("/tech-blog/service-worker.js");
     });
   }
 </script>
