@@ -1,90 +1,81 @@
 ---
-import type { CollectionEntry } from "astro:content";
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import FormattedDate from "../components/FormattedDate.astro";
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
 
-type Props = CollectionEntry<"blog">["data"];
+type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
 <html lang="ja">
-  <head>
-    <BaseHead
-      title={title}
-      description={description}
-      image={heroImage ? `/tech-blog${heroImage}` : undefined}
-      article={true}
-    />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": "${title}",
-        "description": "${description}",
-        "image": "${heroImage ? `/tech-blog${heroImage}` : ''}",
-        "datePublished": "${pubDate.toISOString()}",
-        "dateModified": "${updatedDate?.toISOString() || pubDate.toISOString()}",
-        "author": {
-          "@type": "Person",
-          "name": "森 宝松",
-          "url": "https://x.com/HoumatsuM7789"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "森 宝松のプログラミングブログ",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://pbs.twimg.com/profile_images/1890645300370632704/NjNqgEzg_400x400.jpg"
-          }
-        }
-      }
-    </script>
-  </head>
+	<head>
+		<BaseHead title={title} description={description} image={heroImage ? `/tech-blog${heroImage}` : undefined} article={true} />
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "BlogPosting",
+				"headline": "${title}",
+				"description": "${description}",
+				"image": "${heroImage ? `/tech-blog${heroImage}` : ''}",
+				"datePublished": "${pubDate.toISOString()}",
+				"dateModified": "${updatedDate?.toISOString() || pubDate.toISOString()}",
+				"author": {
+					"@type": "Person",
+					"name": "森 宝松",
+					"url": "https://x.com/HoumatsuM7789"
+				},
+				"publisher": {
+					"@type": "Organization",
+					"name": "森 宝松のプログラミングブログ",
+					"logo": {
+						"@type": "ImageObject",
+						"url": "https://pbs.twimg.com/profile_images/1890645300370632704/NjNqgEzg_400x400.jpg"
+					}
+				}
+			}
+		</script>
+	</head>
 
-  <body class="min-h-screen bg-gray-50">
-    <Header />
-    <main class="max-w-4xl mx-auto px-4 py-12">
-      <article
-        class="prose prose-lg mx-auto bg-white rounded-lg shadow-lg overflow-hidden"
-      >
-        {
-          heroImage && (
-            <div class="relative h-[400px]">
-              <img
-                class="w-full h-full object-cover"
-                width={1020}
-                height={510}
-                src={`/tech-blog${heroImage}`}
-                alt={title}
-              />
-            </div>
-          )
-        }
-        <div class="p-8">
-          <div class="mb-8 text-center">
-            <div class="text-gray-600 mb-2">
-              <FormattedDate date={pubDate} />
-              {
-                updatedDate && (
-                  <div class="italic">
-                    Last updated on <FormattedDate date={updatedDate} />
-                  </div>
-                )
-              }
-            </div>
-            <h1 class="text-4xl font-bold text-gray-900 mb-4">{title}</h1>
-            <p class="text-xl text-gray-600">{description}</p>
-            <hr class="my-8" />
-          </div>
-          <div class="prose-headings:text-gray-900 prose-p:text-gray-700">
-            <slot />
-          </div>
-        </div>
-      </article>
-    </main>
-    <Footer />
-  </body>
+	<body class="min-h-screen bg-gray-50">
+		<Header />
+		<main class="max-w-4xl mx-auto px-4 py-12">
+			<article class="prose prose-lg mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+				{heroImage && (
+					<div class="relative h-[400px]">
+						<img
+							class="w-full h-full object-cover"
+							width={1020}
+							height={510}
+							src={`/tech-blog${heroImage}`}
+							alt={title}
+						/>
+					</div>
+				)}
+				<div class="p-8">
+					<div class="mb-8 text-center">
+						<div class="text-gray-600 mb-2">
+							<FormattedDate date={pubDate} />
+							{
+								updatedDate && (
+									<div class="italic">
+										Last updated on <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
+						</div>
+						<h1 class="text-4xl font-bold text-gray-900 mb-4">{title}</h1>
+						<p class="text-xl text-gray-600">{description}</p>
+						<hr class="my-8" />
+					</div>
+					<div class="prose-headings:text-gray-900 prose-p:text-gray-700">
+						<slot />
+					</div>
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
 </html>
