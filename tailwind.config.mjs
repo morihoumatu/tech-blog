@@ -5,10 +5,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        'blog-primary': '#FF0000', // 赤色
-        'blog-secondary': '#FFA500', // オレンジ
-        'blog-dark': '#000000', // 黒
-        'blog-light': '#FFFFFF', // 白
+        'blog-primary': '#FF0000',
+        'blog-secondary': '#FFA500',
+        'blog-dark': '#000000',
+        'blog-light': '#FFFFFF',
       },
       typography: {
         DEFAULT: {

@@ -26,21 +26,24 @@ export default defineConfig({
 	},
 	compressHTML: true,
 	build: {
-		inlineStylesheets: 'auto',
-		assets: 'assets',
-		format: 'file',
-		assetsPrefix: '_astro',
-		serverEntry: 'entry.mjs',
+		assets: '_assets',
+		inlineStylesheets: 'never'
 	},
 	vite: {
 		build: {
-			assetsInlineLimit: 4096,
+			cssCodeSplit: false,
+			assetsInlineLimit: 0,
 			rollupOptions: {
 				output: {
-					entryFileNames: 'entry.[hash].js',
-					chunkFileNames: 'chunks/chunk.[hash].js',
-					assetFileNames: 'assets/asset.[hash][extname]'
+					assetFileNames: '_assets/[name].[hash][extname]',
+					chunkFileNames: '_assets/[name].[hash].js',
+					entryFileNames: '_assets/[name].[hash].js'
 				}
+			}
+		},
+		css: {
+			modules: {
+				generateScopedName: '[name]__[local]__[hash:base64:5]'
 			}
 		}
 	}

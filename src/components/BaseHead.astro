@@ -17,11 +17,8 @@ const {
   article,
 } = Astro.props;
 
-// OGPの基本設定
 const ogType = article ? "article" : "website";
 const ogTitle = `${title} | ${SITE_TITLE}`;
-
-// キャッシュ制御のためのタイムスタンプ
 const buildTime = new Date().toISOString();
 ---
 
@@ -84,22 +81,6 @@ const buildTime = new Date().toISOString();
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 
-<!-- Font preloads -->
-<link
-  rel="preload"
-  href="/tech-blog/fonts/atkinson-regular.woff"
-  as="font"
-  type="font/woff"
-  crossorigin
-/>
-<link
-  rel="preload"
-  href="/tech-blog/fonts/atkinson-bold.woff"
-  as="font"
-  type="font/woff"
-  crossorigin
-/>
-
 <!-- JSON-LD -->
 <script type="application/ld+json">
   {
@@ -120,7 +101,9 @@ const buildTime = new Date().toISOString();
 <script>
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("/tech-blog/service-worker.js");
+      navigator.serviceWorker.register("/tech-blog/service-worker.js", {
+        scope: "/tech-blog/",
+      });
     });
   }
 </script>

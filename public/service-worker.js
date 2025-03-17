@@ -1,13 +1,13 @@
 const CACHE_NAME = 'blog-cache-v1';
-const OFFLINE_URL = '/offline.html';
+const OFFLINE_URL = '/tech-blog/offline.html';
 
 const urlsToCache = [
-  '/',
-  '/offline.html',
-  '/styles/global.css',
-  '/fonts/atkinson-regular.woff',
-  '/fonts/atkinson-bold.woff',
-  '/favicon.svg'
+  '/tech-blog/',
+  '/tech-blog/offline.html',
+  '/tech-blog/styles/global.css',
+  '/tech-blog/fonts/atkinson-regular.woff',
+  '/tech-blog/fonts/atkinson-bold.woff',
+  '/tech-blog/favicon.svg'
 ];
 
 self.addEventListener('install', (event) => {
