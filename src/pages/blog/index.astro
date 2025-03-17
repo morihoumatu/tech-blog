@@ -27,6 +27,13 @@ const posts = (await getCollection("blog")).sort(
           posts.map((post) => (
             <a href={`/tech-blog/blog/${post.id}/`} class="group">
               <article class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+                <div class="relative h-48">
+                  <img
+                    class="w-full h-full object-cover"
+                    src={post.data.heroImage}
+                    alt=""
+                  />
+                </div>
                 <div class="p-6">
                   <h2 class="text-xl font-semibold text-gray-900 group-hover:text-blog-primary mb-2">
                     {post.data.title}
