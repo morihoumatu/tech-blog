@@ -30,7 +30,7 @@ const posts = (await getCollection("blog")).sort(
                 <div class="relative h-48">
                   <img
                     class="w-full h-full object-cover"
-                    src={`/tech-blog${post.data.heroImage}`}
+                    src={post.data.heroImage}
                     alt=""
                   />
                 </div>
