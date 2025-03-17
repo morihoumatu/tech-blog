@@ -29,17 +29,14 @@ export default defineConfig({
 		inlineStylesheets: 'auto',
 		assets: 'assets',
 		format: 'file',
-		// キャッシュ対策のためのファイル名にハッシュを追加
 		assetsPrefix: '_astro',
 		serverEntry: 'entry.mjs',
 	},
 	vite: {
 		build: {
-			// アセットのキャッシュ対策
 			assetsInlineLimit: 4096,
 			rollupOptions: {
 				output: {
-					// ファイル名にハッシュを含める
 					entryFileNames: 'entry.[hash].js',
 					chunkFileNames: 'chunks/chunk.[hash].js',
 					assetFileNames: 'assets/asset.[hash][extname]'
