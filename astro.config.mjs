@@ -42,13 +42,6 @@ export default defineConfig({
 					entryFileNames: '_assets/[name].[hash].js'
 				}
 			}
-		},
-		server: {
-			middlewareMode: true,
-			hmr: {
-				protocol: 'ws',
-				host: 'localhost'
-			}
 		}
 	}
 });
