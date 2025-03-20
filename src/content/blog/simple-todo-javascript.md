@@ -1,7 +1,7 @@
 ---
 title: '【実践】簡単なToDoリストを作ってみよう！（JavaScript編）'
 description: 'JavaScriptを使って基本的なToDoリストアプリを作成する方法を、初心者向けにステップバイステップで解説します。'
-pubDate: 'Aug 05 2024'
+pubDate: 'Mar 15 2025'
 heroImage: '/tech-blog/blog-placeholder-1.jpg'
 ---
 

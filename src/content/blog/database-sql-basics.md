@@ -1,7 +1,7 @@
 ---
 title: '【入門】データベースとは？SQLの基本を理解しよう'
 description: 'データベースの基本概念とSQLの基礎を、初心者にもわかりやすく解説します。実践的な例を交えながら、データベース操作の基本を学びましょう。'
-pubDate: 'Aug 10 2024'
+pubDate: 'Mar 16 2025'
 heroImage: '/tech-blog/blog-placeholder-3.jpg'
 ---
 

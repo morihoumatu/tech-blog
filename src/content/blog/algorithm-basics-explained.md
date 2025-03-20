@@ -1,7 +1,7 @@
 ---
 title: '【図解】アルゴリズムとは？初心者が知るべき基本概念'
 description: 'プログラミング初心者のために、アルゴリズムの基本概念をわかりやすく図解で解説します。'
-pubDate: 'Jul 01 2024'
+pubDate: 'Mar 5 2025'
 heroImage: '/tech-blog/blog-placeholder-5.jpg'
 ---
 

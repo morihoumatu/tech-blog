@@ -1,7 +1,7 @@
 ---
 title: '【初心者向け】簡単な電卓アプリを作ってみよう！（Python編）'
 description: 'Pythonを使って基本的な四則演算ができる電卓アプリを作成する方法を、初心者向けにステップバイステップで解説します。'
-pubDate: 'Aug 01 2024'
+pubDate: 'Mar 14 2025'
 heroImage: '/tech-blog/blog-placeholder-2.jpg'
 ---
 

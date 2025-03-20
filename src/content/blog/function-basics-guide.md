@@ -1,7 +1,7 @@
 ---
 title: '【基礎から学ぶ】関数の作り方と使い方を徹底解説'
 description: 'プログラミングの基本要素である関数について、作り方から実践的な使い方まで初心者にもわかりやすく解説します。'
-pubDate: 'Jul 20 2024'
+pubDate: 'Mar 10 2025'
 heroImage: '/tech-blog/blog-placeholder-4.jpg'
 ---
 

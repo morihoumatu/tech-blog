@@ -1,7 +1,7 @@
 ---
 title: 'プログラミング初心者が最初に学ぶべき5つの概念'
 description: 'プログラミングを始めたばかりの方が最初に理解すべき重要な5つの概念を解説します。'
-pubDate: 'Jun 22 2024'
+pubDate: 'Mar 1 2025'
 heroImage: '/tech-blog/blog-placeholder-1.jpg'
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: '【初心者向け】APIとは？使い方と実装方法をわかりやすく解説'
 description: 'APIの基本概念から実際の使い方、実装方法まで、初心者にもわかりやすく解説します。具体的な例を交えながら、APIの理解を深めましょう。'
-pubDate: 'Aug 15 2024'
+pubDate: 'Mar 17 2025'
 heroImage: '/tech-blog/blog-placeholder-4.jpg'
 ---
 

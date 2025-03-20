@@ -1,7 +1,7 @@
 ---
 title: '【図解】リスト（配列）と辞書（オブジェクト）の違いを解説'
 description: 'プログラミングの基本的なデータ構造であるリスト（配列）と辞書（オブジェクト）の違いと使い方を、図解でわかりやすく解説します。'
-pubDate: 'Jul 30 2024'
+pubDate: 'Mar 13 2025'
 heroImage: '/tech-blog/blog-placeholder-3.jpg'
 ---
 

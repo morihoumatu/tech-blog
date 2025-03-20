@@ -1,7 +1,7 @@
 ---
 title: '【実践】Node.jsで簡単なサーバーを作ってみよう！'
 description: 'Node.jsを使って基本的なWebサーバーを作成する方法を、初心者向けにステップバイステップで解説します。'
-pubDate: 'Aug 20 2024'
+pubDate: 'Mar 18 2025'
 heroImage: '/tech-blog/blog-placeholder-5.jpg'
 ---
 

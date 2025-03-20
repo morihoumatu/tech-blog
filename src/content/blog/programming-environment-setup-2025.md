@@ -1,7 +1,7 @@
 ---
 title: '【2025年版】プログラミングを始めるための環境構築ガイド（Windows, Mac対応）'
 description: '2025年最新版！WindowsとMacでのプログラミング環境構築方法を、初心者にもわかりやすく解説します。'
-pubDate: 'Jun 15 2024'
+pubDate: 'Mar 19 2025'
 heroImage: '/tech-blog/blog-placeholder-2.jpg'
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: '【入門】条件分岐(if文)を理解してロジックを組み立てよう'
 description: 'プログラミングの基本中の基本、if文による条件分岐の使い方を初心者向けにわかりやすく解説します。'
-pubDate: 'Jul 25 2024'
+pubDate: 'Mar 11 2025'
 heroImage: '/tech-blog/blog-placeholder-3.jpg'
 ---
 

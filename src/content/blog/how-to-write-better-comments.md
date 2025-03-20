@@ -1,7 +1,7 @@
 ---
 title: '【コメントの書き方でコードが劇的にわかりやすくなる！】'
 description: 'プログラミングにおける効果的なコメントの書き方と、コードの可読性を向上させるベストプラクティスを解説します。'
-pubDate: 'Jul 10 2024'
+pubDate: 'Mar 18 2025'
 heroImage: '/tech-blog/blog-placeholder-3.jpg'
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: '変数・データ型・関数とは？初心者向けに超わかりやすく解説'
 description: 'プログラミングの基礎概念である変数、データ型、関数について初心者にもわかりやすく解説します。'
-pubDate: 'Jun 20 2024'
+pubDate: 'Mar 2 2025'
 heroImage: '/tech-blog/blog-placeholder-3.jpg'
 ---
 
